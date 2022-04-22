@@ -26,10 +26,15 @@ li {
 }
 .nav-wrapper ul li a {
   text-decoration: none;
-  color: rgb(245 165 0);
+  color: #1b1b1b;
   display: block;
   padding: 10px;
   font-size: 18px;
+  padding-bottom: 3px;
+}
+.nav-wrapper ul li a.active {
+  border-bottom: 1px solid #c7a768;
+  color:#a16b00;
 }
 nav.fixed_menu {
   position: fixed;
@@ -230,11 +235,9 @@ footer.footer_section button {
 }
 
 /* footer changeable section */
-
-.first_footer_view{
-  display: none;
+.first_footer_view,.second_footer_view{
+  transition:.5s;
 }
-
 .second_footer_view h2{
   color: #ea9c00;
 }
@@ -269,4 +272,11 @@ footer.footer_section button {
   text-decoration: none;
   color:#ea9c00;
   font-weight: 700;
+}
+.footer_toggle_content{
+  position: relative;
+}
+.first_footer_view.active,.second_footer_view.active{
+  position: absolute;
+  left: -9999px;
 }

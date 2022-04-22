@@ -29,7 +29,7 @@
               <img src="./assets/images/logo.webp" alt="" />
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -170,8 +170,8 @@
     <footer class="footer_section py-4">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <div class="first_footer_view">
+          <div class="col-md-6 footer_toggle_content">
+            <div id="first_footer_view" class="first_footer_view">
               
             <h3>Better yet, see us in person!</h3>
             <p>Unit - 224, JMD Megapolis, Sohna Road, Sec - 48 Gurgaon</p>
@@ -241,10 +241,10 @@
                     </svg></svg></span>
                 Message us on WhatsApp</a>
             </p>
-            <button>FILL UP TO IMPROVISE MODERN BUSINESS TRAVEL</button>
+            <button onclick="activeClassToggle('second_footer_view','first_footer_view')">FILL UP TO IMPROVISE MODERN BUSINESS TRAVEL</button>
           
             </div>
-            <div class="second_footer_view">
+            <div id="second_footer_view" class="second_footer_view active">
               <h2>Fill up to improvise modern business travel</h2>
               <form action="">
                 <div class="form-group">
@@ -264,7 +264,7 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
                   <button class="submit_btn">SEND</button>
-                  <a href="javascript:void(0)" class="cancel_btn">CANCEL</a>
+                  <a href="javascript:void(0)" onClick="activeClassToggle('first_footer_view','second_footer_view')" class="cancel_btn">CANCEL</a>
                 </div>
               </form>
             </div>
