@@ -85,7 +85,8 @@ section.hero video {
 }
 .hero-content .text h1 {
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: -1px;
 }
 .hero-content .text p {
   color: #fff;
