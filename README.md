@@ -7,3 +7,6 @@ change alignment,
 change color
  change fontSize, 
  remove background
+ remove shadow 
+ add both side  border
+ 

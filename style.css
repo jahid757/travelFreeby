@@ -128,10 +128,14 @@ p {
   background-color: rgb(255, 255, 255);
   height: 100%;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(72 69 224 / 10%);
+  /* box-shadow: 0 0 10px rgb(72 69 224 / 10%); */
   transition: 0.5s;
   text-align: left;
   /* border: 1px solid rgb(255 228 173); */
+}
+.border_both{
+  border-left: 1px solid rgb(255 228 173);
+  border-right: 1px solid rgb(255 228 173);
 }
 .card_view:hover {
   transform: translateY(-10px);
