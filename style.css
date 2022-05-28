@@ -139,7 +139,7 @@ p {
 }
 .card_view:hover {
   transform: translateY(-10px);
-  border-color: transparent;
+  /* border-color: transparent; */
 }
 
 /* travel management */
