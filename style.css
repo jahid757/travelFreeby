@@ -1,8 +1,13 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@400;700&family=Orbitron:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@400;700&family=Montserrat:wght@200;400;500&family=Orbitron:wght@600;700;800&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   color: rgb(27, 27, 27);
+  font-family: 'Archivo Black', sans-serif;
 }
 ul {
   padding: 0;
@@ -17,6 +22,9 @@ body {
 }
 img {
   width: 100%;
+}
+p span,p,button{
+  font-family: 'Montserrat', sans-serif;
 }
 li {
   display: inline-block;
@@ -80,28 +88,37 @@ section.hero video {
   top: 50%;
   transform: translateY(-50%);
   /* width: 100%; */
-  left: auto;
+  /* left: auto; */
+  left: 2%;
   text-align: left;
 }
 .hero-content .text h1 {
   color: #fff;
   font-weight: 600;
   letter-spacing: -1px;
+  font-size: 32px;
+  font-weight: 400;
+  /* white-space: pre-line; */
+  line-height: 1.2;
+  word-wrap: break-word;
 }
-.hero-content .text p {
+.hero-content .text p span {
   color: #fff;
   font-size: 24px;
 }
 .hero-content .text button {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   background-color: rgb(234 156 0);
   border: none;
   padding: 15px 30px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 .text_header h3 {
   text-align: center;
@@ -114,12 +131,9 @@ section.hero video {
 
 /* about content */
 p.title {
-  /* color: rgb(27, 27, 27); */
-  color:rgb(201, 134, 0);
-  font-size: 28px;
+  color: rgb(27, 27, 27);
   font-weight: 400;
-  font-family: Arial, Helvetica, sans-serif;
-  /* color:#26ae78 */
+  font-size: 24px;
 }
 p {
   color: rgb(94, 94, 94);
@@ -145,32 +159,31 @@ p {
 
 /* travel management */
 .travel_management h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 27px;
-  color: rgb(27, 27, 27);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #c98600;
   margin-bottom: 20px;
 }
 .travel_management .single_content p {
   color: rgb(27, 27, 27);
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
+
 .travel_management .single_content p.title {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }
 /* mail section */
 .mail_section h2 {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 40px;
   color: rgb(27, 27, 27);
   margin-bottom: 20px;
 }
 .mail_section p {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(27, 27, 27);
+  color: rgb(94, 94, 94);
   margin-bottom: 20px;
   text-align: center;
   font-size: 18px;
@@ -181,11 +194,16 @@ p {
   margin: 0 auto;
 }
 .submit_email input {
-  width: 85%;
+  width: 80%;
   outline: none;
   padding: 10px;
-  border: 1px solid rgb(246, 246, 246);
-  background: rgb(246, 246, 246);
+  /* border: 1px solid rgb(218, 218, 218); */
+  border: none;
+  background-color: rgb(246, 246, 246);
+  font-size: 16px;
+  color: rgb(71, 71, 71);
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 .submit_email input:focus {
   border: 1px solid rgb(140 140 140);
@@ -193,10 +211,13 @@ p {
 .submit_email button {
   padding: 10px 20px;
   outline: none;
-  border: 1px solid rgb(201, 134, 0);
-  background-color: rgb(201, 134, 0);
+  border: 1px solid rgb(234 156 0);
+  background-color: rgb(234 156 0);
   font-weight: 600;
-  color: #fff;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* footer section */
@@ -206,11 +227,15 @@ footer.footer_section {
 footer.footer_section h3 {
   color: #f7f7f7;
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
 }
 footer.footer_section p,
 footer.footer_section p span {
   color: #a4a4a4;
   margin-bottom: 5px;
+  font-size: 18px;
 }
 footer.footer_section p span a {
   color: #ea9c00;
@@ -231,15 +256,21 @@ footer.footer_section button {
   padding: 10px 15px;
   outline: none;
   border: none;
-  background: rgb(201, 134, 0);
-  color: #fff;
+  background: rgb(234 156 0);
+  color: rgb(0, 0, 0);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 2px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .copyright a {
   color: rgb(201, 134, 0);
   text-decoration: none;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  display: block;
 }
 
 /* footer changeable section */
@@ -249,11 +280,19 @@ footer.footer_section button {
 }
 .second_footer_view h2 {
   color: #ea9c00;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
 }
 .form-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.form-group input,.message_box{
+  color: rgb(171, 171, 171);
+  background-color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 .single_form {
   width: 48%;
@@ -278,12 +317,15 @@ footer.footer_section button {
   color: #a4a4a4;
   cursor: pointer;
   margin-left: 5px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }
 .cancel_btn,
 .cancel_btn:hover {
   text-decoration: none;
   color: #ea9c00;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 .footer_toggle_content {
   position: relative;
@@ -398,20 +440,24 @@ footer.footer_section button {
 
 /* fixed message */
 .fixed_message {
-  position: fixed;
-  right: 20px;
-  /* background: #fff; */
-  bottom: 0;
-  width: 370px;
+  height:500px;
+  position:fixed;
+  right:20px;
+  bottom: -9999px;
+}
+.fixed_message.active {
+  bottom: 90px;
 }
 .chat_container {
-  position: fixed;
-  right: 20px;
+  /* position: fixed; */
+  /* right: 20px; */
   /* background: #fff; */
   bottom: 0;
   width: 370px;
   bottom: -9999px;
   box-shadow: 0px 0px 10px rgb(186 186 186 / 60%);
+  overflow-y:scroll;
+  top:0
 }
 .chat_container .chat_header h2 {
   font-size: 24px;
@@ -485,9 +531,7 @@ footer.footer_section button {
   height: 50px;
 }
 
-.chat_container.active {
-  bottom: 90px;
-}
+
 
 /* responsive css */
 
