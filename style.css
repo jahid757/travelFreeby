@@ -40,10 +40,13 @@ li {
   font-size: 18px;
   padding-bottom: 3px;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 .nav-wrapper ul li a.active {
   border-bottom: 1px solid #c7a768;
   color: #a16b00;
+  font-weight: 500;
 }
 nav.fixed_menu {
   position: fixed;
@@ -134,6 +137,7 @@ p.title {
   color: rgb(27, 27, 27);
   font-weight: 400;
   font-size: 24px;
+  color: #ea9c00;
 }
 p {
   color: rgb(94, 94, 94);
@@ -341,10 +345,10 @@ footer.footer_section button {
   margin-top: 120px;
 }
 .head_title h2 {
-  font-weight: bold;
   color: #ea9c00;
   text-align: center;
   margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
 }
 .card_view.text-center p.text {
   font-size: 19px;
@@ -378,11 +382,13 @@ footer.footer_section button {
 }
 .ratting_title h3 {
   font-size: 33px;
+  font-family: 'Montserrat', sans-serif;
 }
 .ratting .rate {
   font-size: 40px;
   font-weight: bold;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 .ratting_title svg {
   width: 22px;
@@ -417,9 +423,11 @@ footer.footer_section button {
 .contact h2 {
   font-weight: bold;
   color: #ea9c00;
+  font-family: 'Montserrat', sans-serif;
 }
 .contact h3 {
   color: rgb(226, 226, 226);
+  font-family: 'Montserrat', sans-serif;
 }
 .contact p {
   font-size: 18px;
@@ -446,7 +454,7 @@ footer.footer_section button {
   bottom: -9999px;
 }
 .fixed_message.active {
-  bottom: 90px;
+  top: 90px;
 }
 .chat_container {
   /* position: fixed; */
@@ -459,6 +467,13 @@ footer.footer_section button {
   overflow-y:scroll;
   top:0
 }
+.chat_container::-webkit-scrollbar {
+  display: none;
+}
+.chat_container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .chat_container .chat_header h2 {
   font-size: 24px;
   color: #000000;
@@ -466,6 +481,7 @@ footer.footer_section button {
   padding: 10px;
   border-radius: 5px 5px 0 0px;
   margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 #chat_input {
   background: rgb(255, 255, 255);
@@ -483,6 +499,10 @@ footer.footer_section button {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+#chat_input p a{
+  font-family: 'Montserrat', sans-serif;
 }
 #chat_input textarea {
   height: 150px;
